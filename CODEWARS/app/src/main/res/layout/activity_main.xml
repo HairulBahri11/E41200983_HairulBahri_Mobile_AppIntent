@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_user_group_two_color" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:text="CODE WARS"
+    android:layout_above="@+id/edit_visit"
+    android:layout_marginBottom="-235dp"
+    android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/edit_visit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="-58dp"
+        android:layout_marginLeft="15dp"
+        android:hint="TYPE YOUR URL" />
+
+    <Button
+        android:id="@+id/visit_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="310dp"
+        android:layout_toRightOf="@+id/edit_visit"
+        android:text="Visit"
+        android:onClick="action_visit"/>
+
+    <EditText
+        android:id="@+id/edit_nim"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_visit"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="-300dp"
+        android:hint="NIM"
+        />
+    <EditText
+        android:id="@+id/edit_nama"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_visit"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="-355dp"
+        android:hint="NAMA"
+        />
+    <Button
+        android:id="@+id/save_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:onClick="action_save"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/edit_visit"
+        android:layout_marginBottom="-435dp"/>
+
+
+</RelativeLayout>
